@@ -132,11 +132,8 @@ print("...and the others")
 # ## Ask the Mathematician
 
 # Pretend we have a mathematician who has no knowlege or much interest in physics. Tell him we have two distinct quaternions, $B = (t, x, y, z)$ and $B' = (t', x', y', z')$. We wish to analyze what happens when both of these are squared, and additionally the first terms of the square are identical:
-# $$ \begin{align}
-# B^2 &= (t^2 - (x^2 + y^2 + z^2), 2 t x, 2 t y, 2 t z) \\
-# B'^2 &= (t'^2 - (x'^2 + y'^2 + z'^2), 2 t' x', 2 t' y', 2 t' z') \\
-#  &= (t^2 - (x^2 + y^2 + z^2), 2 t' x', 2 t' y', 2 t' z')
-# \end{align} $$ Ask the mathematician how many degrees of freedom are involve in transforming $B$ to $B'$ and he would tell you 3 because there is but one constraint.
+# $$ \begin{align} B^2 &= (t^2 - (x^2 + y^2 + z^2), 2 t x, 2 t y, 2 t z) \\ B'^2 &= (t'^2 - (x'^2 + y'^2 + z'^2), 2 t' x', 2 t' y', 2 t' z') \\  &= (t^2 - (x^2 + y^2 + z^2), 2 t' x', 2 t' y', 2 t' z') \end{align} $$ 
+# Ask the mathematician how many degrees of freedom are involve in transforming $B$ to $B'$ and he would tell you 3 because there is but one constraint.
 
 # Now we ask the mathematician to repeat the exercise, but this time we will start with the 4-vectors $B^\mu$ and $B'^\mu$. The mathematician being a mathematician refuses. A 4-vector can be added to another 4-vector or multiplied by a scalar. A 4-vector cannot be squared. There is no operation that I am aware of (and I am not a professional mathematician or physicist) that can generate both the scalar or first term of the quaternion squared and the other three. Nor am I aware of an official name for the other three. In the context of quaternion algebra, I have chosen to call them space-times-time.
 
@@ -148,21 +145,9 @@ print("...and the others")
 # g_{30} & g_{31} & g_{32} & g_{33}
 # \end{vmatrix} $$
 # Contract the two 4 vectors:
-# $$\begin{align}
-# g_{\mu \nu} B^\mu B'^\nu &= g_{00} t t'+ g_{11} x x' + g_{22} y y' + g_{33} z z'\\
-# &+ g_{10} x t' + g_{01} t x' + g_{23} y z' + g_{32} z y' \\
-# &+ g_{20} y t' + g_{02} t y' + g_{31} z x' + g_{13} x z'\\
-# &+ g_{30} z t' + g_{03} t z' + g_{32} x y' + g_{33} y x'
-# \end{align} $$
+# $$\begin{align} g_{\mu \nu} B^\mu B'^\nu &= g_{00} t t'+ g_{11} x x' + g_{22} y y' + g_{33} z z'\\ &+ g_{10} x t' + g_{01} t x' + g_{23} y z' + g_{32} z y' \\ &+ g_{20} y t' + g_{02} t y' + g_{31} z x' + g_{13} x z'\\ &+ g_{30} z t' + g_{03} t z' + g_{32} x y' + g_{33} y x' \end{align} $$
 # This is all possible second-order combinations of $(t, x, y, z)$ and $(t', x', y', z')$. One can generate a quaternion product which has casual similarities to this:
-# $$\begin{align}
-# G & = (g_0 t, g_1 x, g_2 y, g_3 z) \\
-# G' & = (g_0 t', g_1 x', g_2 y', g_3 z') \\
-# G G' &= \begin{pmatrix}g_0 g_0 t t' - g_1 g_1 x x' - g_2 g_2 y y' - g_3 g_3 z z',\\
-# + g_1 g_0 x t' + g_0 g_1 t x' + g_2 g_3 y z' - g_3 g_2 z y', \\
-# + g_2 g_0 y t' + g_0 g_2 t y' + g_3 g_1 z x' - g_1 g_3 x z',\\
-# + g_3 g_0 z t' + g_0 g_3 t z' + g_3 g_2 x y' - g_3 g_3 y x' \end{pmatrix}
-# \end{align} $$
+# $$\begin{align} G & = (g_0 t, g_1 x, g_2 y, g_3 z) \\ G' & = (g_0 t', g_1 x', g_2 y', g_3 z') \\ G G' &= \begin{pmatrix}g_0 g_0 t t' - g_1 g_1 x x' - g_2 g_2 y y' - g_3 g_3 z z',\\ + g_1 g_0 x t' + g_0 g_1 t x' + g_2 g_3 y z' - g_3 g_2 z y', \\ + g_2 g_0 y t' + g_0 g_2 t y' + g_3 g_1 z x' - g_1 g_3 x z',\\ + g_3 g_0 z t' + g_0 g_3 t z' + g_3 g_2 x y' - g_3 g_3 y x' \end{pmatrix} \end{align} $$
 # 
 
 # While this has the same set of combinations, the results are not all packed into one term but get distributed over four terms. I would call this an automorphism in the sense that one starts with two terms that have the structure of a quaternion and ends with a quaternion.
@@ -180,14 +165,7 @@ print("...and the others")
 # The deep message of special relativity is the intimate relationship between space and time. Anyone who thinks of measurements involving time via velocity are in a box that cannot be mixed with measurements of space via angles has not learned the measage about special relativity. And yet the rotations are pure space, no factors of time.
 
 # All six of these measurements are ratios. Write them out in a Cartesian representation:
-# $$\begin{align}
-# V_x &= \frac{d x}{d t} \\
-# V_y &= \frac{d y}{d t} \\
-# V_z &= \frac{d z}{d t} \\
-# \tan(d\theta_{xy}) &= \frac{d x}{d y} = \frac{V_x}{V_y}\\
-# \tan(d\theta_{zx}) &= \frac{d z}{d x} = \frac{V_z}{V_x}\\
-# \tan(d\theta_{yz}) &= \frac{d y}{d z} = \frac{V_y}{V_z}
-# \end{align}$$
+# $$\begin{align} V_x &= \frac{d x}{d t} \\ V_y &= \frac{d y}{d t} \\ V_z &= \frac{d z}{d t} \\ \tan(d\theta_{xy}) &= \frac{d x}{d y} = \frac{V_x}{V_y}\\ \tan(d\theta_{zx}) &= \frac{d z}{d x} = \frac{V_z}{V_x}\\ \tan(d\theta_{yz}) &= \frac{d y}{d z} = \frac{V_y}{V_z} \end{align} $$
 
 # Differential angles are ratios of differential distances. The ratio of two velocities is also a ratio of distances. This observations suggests one should be suspecious of claims these variables are independent of each other. Representations of the Lorentz group are invariably written with these six ratios treated as independent variables. Yet I hope the reader will be open to alternatives that make do with less because the ratio of a ratio can be another ratio.
 
