@@ -29,5 +29,5 @@ The Jupyter notebook served on line is of no use since at the moment, it shows
 the input cells but not output. Still, you can download and run locally [the Jupyter notebook](https://github.com/dougsweetser/Quaternion_Lorentz_Transformations/blob/master/Lorentz_boosts_w_just_h.ipynb)
 
 Or just clone the repo with: **git clone
-https://github.com/dougsweetser/Quaternion_Lorentz_Transformations.git ** and
+https://github.com/dougsweetser/Quaternion_Lorentz_Transformations.git** and
 run the notebook on your machine.
