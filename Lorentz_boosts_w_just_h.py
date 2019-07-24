@@ -183,7 +183,7 @@ h = QH([0, hx, hy, hz])
 B = QH([t, x, y, z])
 Bp = QH([t, -y, x, z])
 hBh = h.product(B.product(h.conj())).simple_q()
-hBh.display("h B h*")
+hBh.display_q("h B h*")
 
 
 # The way sympy solve works is to feed it an expression that equals zero. In this case, that would be $hBh -B'$ as an array.
