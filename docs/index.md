@@ -20,10 +20,10 @@ have three degrees of rotation for rotations and three for boosts. Because six
 is greater than four, my claim must necessarily be wrong, or so it is
 reasonably claimed.
 
-This repo contains a Jupyter notebook which argues my side of the case. Please
+This repo contains two Jupyter notebooks which argues my side of the case. Please
 read it and let me know what you think.
 
-As Jupyter Notebooks:
+As Jupyter Notebook downloads:
 
 [Lorentz boost with just h](Lorentz_boosts_w_just_h.ipynb)
 
@@ -32,13 +32,17 @@ As Jupyter Notebooks:
 
 As PDFs:
 
-[Lorentz boost with just h](Lorentz_boosts_w_just_h.pdf)
+[Lorentz boost with just h](Lorentz_boosts_w_just_h.pdf) - 14 pages
 
-[Replies and responses](replies_and_responses.pdf)
+[Replies and responses](replies_and_responses.pdf) - 27 pages
 
-The Jupyter notebook served on line is of no use since at the moment, it shows
-the input cells but not output. Still, you can download and run locally.
+Or just clone the repo with: 
 
-Or just clone the repo with: **git clone
-https://github.com/dougsweetser/Quaternion_Lorentz_Transformations.git** and
-run the notebook on your machine.
+```
+git clone
+https://github.com/dougsweetser/Quaternion_Lorentz_Transformations.git
+```
+
+Run the Jupyter notebook on your machine. The QH library has all the needed
+quaternion functions. If your computer is not setup to run a Jupyter notebook,
+the easiest approach may be to download [anaconda](http://anaconda.com).
