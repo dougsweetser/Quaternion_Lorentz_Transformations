@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
+        <title>Quaternion Lorentz Boosts</title>
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
                 <!-- Collapsed navigation -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href=".">My Docs</a>
+                    <a class="navbar-brand" href=".">Quaternion Lorentz Boosts</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -52,28 +52,42 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+        <li class="main active"><a href="#quaternion-lorentz-transformations">Quaternion Lorentz Transformations</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h1 id="quaternion-lorentz-transformations">Quaternion Lorentz Transformations</h1>
+<p>My hobby is to transform physics equations written with tensors into a
+quaternion form. This formal exercise must leave results confirmed by
+experiment in place. Instead of getting one equation however, the result is
+always four equations. These well-formed "extra" equations may provide new
+avenues for research. At least that is goal.</p>
+<p>In the literature, a number of people have figured out how to represent the
+Lorentz group using a complex-valued quaternion triple function. The work with
+spinors is like this. Because complex-valued quaternions are <strong>not</strong> a division
+algebra, such efforts violate my research effort. In 2010, I figured out a
+triple triple product to do boosts. In 2013, I noticed the very same function
+could also do rotations easily enough.</p>
+<p>In 2019, two people with Ph.D.'s strongly disagreed with my claim that a one
+parameter function and thus at most four degrees of freedom could possibly
+represent all possible Lorentz transformations which has been long known to
+have three degrees of rotation for rotations and three for boosts. Because six
+is greater than four, my claim must necessarily be wrong, or so it is
+reasonably claimed.</p>
+<p>This repo contains a Jupyter notebook which argues my side of the case. Please
+read it and let me know what you think.</p>
+<p>As Jupyter Notebooks:</p>
+<p><a href="Lorentz_boosts_w_just_h.ipynb">Lorentz boost with just h</a></p>
+<p><a href="replies_and_responses.ipynb">Replies and responses</a></p>
+<p>As PDFs:</p>
+<p><a href="Lorentz_boosts_w_just_h.pdf">Lorentz boost with just h</a></p>
+<p><a href="replies_and_responses.pdf">Replies and responses</a></p>
+<p>The Jupyter notebook served on line is of no use since at the moment, it shows
+the input cells but not output. Still, you can download and run locally.</p>
+<p>Or just clone the repo with: <strong>git clone
+https://github.com/dougsweetser/Quaternion_Lorentz_Transformations.git</strong> and
+run the notebook on your machine.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -156,5 +170,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-11-14 12:43:59
+Build Date UTC : 2019-11-14 13:09:48
 -->
